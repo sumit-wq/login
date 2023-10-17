@@ -1,0 +1,24 @@
+.logged-in-text {
+    font-size: larger;
+    color: antiquewhite;
+    margin: auto;
+}
+
+.cancel-btn {
+    width: 100px;
+    height: 44px;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 8px;
+    margin: auto;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.cancel-btn:hover {
+    width: 120px;
+    transition: 0.5s;
+    color: #faa499;
+    opacity: 0.9;
+    letter-spacing: 0.09em;
+}

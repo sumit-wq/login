@@ -1,0 +1,140 @@
+.login-wrapper {
+  position: relative;
+  padding: 10px 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-wrapper .login-form-wrapper {
+  position: relative;
+  width: 370px;
+  height: 450px;
+  background-color: #2b4162;
+  background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+  
+  border-radius: 50px 5px;
+  overflow: hidden;
+}
+
+.login-form-wrapper::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 370px;
+  height: 450px;
+  background-color: #faa499;
+  background-image: linear-gradient(
+    319deg,
+    #faa499 0%,
+    #f7dd85 37%,
+    #ffc55c 100%
+  );
+
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+.login-form-wrapper::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 370px;
+  height: 450px;
+  background-image: linear-gradient(
+    319deg,
+    #cdedfd 0%,
+    #ffec82 37%,
+    #ffcfd2 100%
+  );
+
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.login-form {
+  position: absolute;
+  inset: 4px;
+  border-radius: 50px 5px;
+  background: #28292d;
+  z-index: 10;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading {
+  color: #cdedfd;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #cdedfd;
+}
+
+.links a:hover {
+  color: #faa499;
+  cursor: pointer;
+  font-size: large;
+  transition: 0.5s;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0px;
+}
+
+.input-box label {
+  color: #cdedfd;
+  font-size: medium;
+  margin-bottom: 4px;
+}
+
+.input-field {
+  outline: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.input-box .input-field:focus,
+.input-box .input-field:valid {
+  height: 44px;
+}
+
+.button-submit {
+  width: 100px;
+  height: 44px;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 8px;
+  margin: auto;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.button-submit:hover {
+  width: 120px;
+  transition: 0.5s;
+  color: #faa499;
+  opacity: 0.9;
+  letter-spacing: 0.09em;
+}
