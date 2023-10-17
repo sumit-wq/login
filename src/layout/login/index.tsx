@@ -86,7 +86,7 @@ const Login: React.FC<ILogin> = ({ handleSubmit, error }) => {
     <>
       <h1 className="heading">Login In</h1>
       {error && (
-        <h3 className="error-text">
+        <h3 className="error-msg ">
           {error?.message ?? "Something went wrong"}
         </h3>
       )}

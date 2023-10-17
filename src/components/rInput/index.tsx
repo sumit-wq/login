@@ -44,6 +44,7 @@ const RInput = (props: IInputProps) => {
   };
 
   return (
+    <>
     <div
       className={`${isPassword && "lock-icon-wrapper"} ${wrapperClassName}`}
       data-testid={dataTestId}
@@ -66,8 +67,9 @@ const RInput = (props: IInputProps) => {
           {showPassword ? "🔐" : "🔒"}
         </span>
       )}
-      {error && <span className="error-text">{error}</span>}
     </div>
+      {error && <span className="error-text">{error}</span>}
+    </>
   );
 };
 

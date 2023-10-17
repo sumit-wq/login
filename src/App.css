@@ -42,6 +42,7 @@
   left: -50%;
   width: 370px;
   height: 450px;
+  background-color: green;
   background-image: linear-gradient(
     319deg,
     #cdedfd 0%,
@@ -69,7 +70,7 @@
   border-radius: 50px 5px;
   background: #28292d;
   z-index: 10;
-  padding: 50px;
+  padding: 50px 50px 20px 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,7 +95,7 @@
   color: #faa499;
   cursor: pointer;
   font-size: large;
-  transition: 0.5s;
+  transition: 0.5s ease;
 }
 
 .input-box {
@@ -113,11 +114,12 @@
   outline: none;
   padding: 8px 12px;
   border-radius: 8px;
+  height: 44px;
 }
 
-.input-box .input-field:focus,
-.input-box .input-field:valid {
-  height: 44px;
+.input-box .input-field:hover {
+  transition: 0.5s ease;
+transform: scaleX(1.1);
 }
 
 .button-submit {
@@ -133,8 +135,16 @@
 
 .button-submit:hover {
   width: 120px;
-  transition: 0.5s;
+  transition: 0.5s ease;
   color: #faa499;
   opacity: 0.9;
   letter-spacing: 0.09em;
+}
+
+.error-msg {
+  color: red;
+  transition: all 0.5s ease;
+  font-size: large;
+  text-align: center;
+  text-transform: capitalize;
 }
